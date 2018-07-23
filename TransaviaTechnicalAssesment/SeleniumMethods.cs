@@ -12,8 +12,6 @@ namespace TransaviaTechnicalAssesment
 {
     public static class SeleniumMethods
     {
-        //private static IWebDriver driver;
-
         public static void LoadUrlWithPath(this IWebDriver driver, string path)
         {
             driver.Navigate().GoToUrl(path);

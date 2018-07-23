@@ -18,13 +18,7 @@ namespace TransaviaTechnicalAssesment.Tests
         {
             Setup();
 
-            PageObjectsClass pageObjects = new PageObjectsClass(driver);
             SeleniumMethods.LoadUrlWithPath(driver, "https://www.transavia.com/en-NL/home/");
-            Cookie cookie = new Cookie("cookies_accepted", "false");
-            driver.Manage().Cookies.AddCookie(cookie);
-
-            //Thread.Sleep(40000);
-            //driver.FindElement(By.Id("routeSelection_DepartureStation-input")).SendKeys("Amsterdam");
         }
     }
 }

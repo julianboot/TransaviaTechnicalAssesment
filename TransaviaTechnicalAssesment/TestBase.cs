@@ -30,9 +30,7 @@ namespace TransaviaTechnicalAssesment
 
                 case "IE11":
                     driver = new InternetExplorerDriver();
-                    //driver.Manage().Cookies.DeleteAllCookies();
                     driver.Manage().Window.Maximize();
-                    //driver.Manage().Cookies.DeleteAllCookies();
                 break;
 
                 case "firefox":

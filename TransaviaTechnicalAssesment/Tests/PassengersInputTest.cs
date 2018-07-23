@@ -18,9 +18,8 @@ namespace TransaviaTechnicalAssesment.Tests
                 Setup();
 
                 SeleniumMethods.LoadUrlWithPath(driver, "https://www.transavia.com/en-NL/home/");
-                WaitForPageIsLoaded(driver);
-                //Thread.Sleep(5000);
 
+                WaitForPageIsLoaded(driver);
                 CloseCookieBanner(driver);
                 ClickPassengersInput(driver);
                 ClickAddAdults(driver, 25);
