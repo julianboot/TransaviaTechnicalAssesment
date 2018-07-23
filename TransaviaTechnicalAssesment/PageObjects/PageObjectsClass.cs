@@ -11,7 +11,6 @@ namespace TransaviaTechnicalAssesment.PageObjects
     {
         //Selenium methods selectors
         public static By CloseCookieButton = By.CssSelector(".button.info-banner-button.button-call-to-action.info-banner-neg-expandible");
-        public static By Topbar = By.XPath("//*[@data-initialized='ui/ResponsiveNavigation']");
 
         //Passengers input selectors
         public static By PassengersInputButton = By.Id("booking-passengers-input");
@@ -20,6 +19,5 @@ namespace TransaviaTechnicalAssesment.PageObjects
 
         //Depart station input selectors
         public static By DepartStationInputField = By.Id("routeSelection_DepartureStation-input");
-
     }
 }

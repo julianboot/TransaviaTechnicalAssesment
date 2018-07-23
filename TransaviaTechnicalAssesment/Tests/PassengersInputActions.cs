@@ -18,6 +18,7 @@ namespace TransaviaTechnicalAssesment.Tests
 
         public static void CloseCookieBanner(IWebDriver driver)
         {
+            SeleniumMethods.WaitForElementDisplayed(driver, PageObjectsClass.CloseCookieButton);
             SeleniumMethods.ClickElement(driver, PageObjectsClass.CloseCookieButton);
         }
 
@@ -31,12 +32,7 @@ namespace TransaviaTechnicalAssesment.Tests
 
         public static void CheckForDiplayedNotification(IWebDriver driver)
         {
-            SeleniumMethods.IsElementDisplayed(driver, PageObjectsClass.MaxAmountNotification);
-        }
-
-        public static void WaitForPageIsLoaded(IWebDriver driver)
-        {
-            SeleniumMethods.WaitForElementPresent(driver, PageObjectsClass.Topbar);
+            SeleniumMethods.WaitForElementDisplayed(driver, PageObjectsClass.MaxAmountNotification);
         }
     }
 }

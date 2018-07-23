@@ -18,7 +18,6 @@ namespace TransaviaTechnicalAssesment.Tests
 
             SeleniumMethods.LoadUrlWithPath(driver, "https://www.transavia.com/en-NL/home/");
 
-            WaitForPageIsLoaded(driver);
             CloseCookieBanner(driver);
             InputDepartStation(driver, "Amsterdam");
             SelectAutosuggestDepartStation(driver, "Amsterdam (Schiphol), Netherlands");
