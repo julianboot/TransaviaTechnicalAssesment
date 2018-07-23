@@ -1,0 +1,51 @@
+Feature: Passengers input
+In order to find the desired amount of flight tickets
+As consumer of Transavia.com
+I want to specify the amount of travellers
+
+Scenario: Specify the amount of passengers to 27
+	Given that I have gone to the homepage of Transavia.com
+	When I add "27" adults to the passengers input
+	Then a notification message will appear
+
+	
+Feature: Depart date selection
+In order to find flight tickets on the desired depart date
+As a consumer of Transavia.com
+I want to specify a depart date
+
+Scenario: Select a depart date
+	Given that I have gone to the homepage of Transavia.com
+	When I open the depart datepicker
+	And select "25 Aug 2018"
+	Then 25 Aug 2018 will be selected as depart date
+	
+Scenario: Select a depart date in the past
+	Given that I have gone to the homepage of Transavia.com
+	When I open the depart datepicker
+	And select "20 Jul 2018"
+	Then "20 Jul 2018" is disabled
+	
+	
+Feature: Depart station input
+In order to find the flight tickets from the desired depart station
+As a consumer of Transavia.com
+I want to specify the depart station
+
+Scenario: Select Amsterdam (Schiphol), Netherlands as depart station
+	Given that I have gone to the homepage of Transavia.com
+	When I enter "Amsterdam" as input in the depart station input field
+	And select "Amsterdam (Schiphol), Netherlands"
+	Then "Amsterdam (Schiphol), Netherlands" is selected as depart station
+	
+
+Feature: Arrival station input
+In orderto find the flight tickets from the desired arrival station
+As a consumer of Transavia.com
+I want to specify the arrival station
+
+Scenario: Select Barcelona, Spain as arrival station
+	Given that I have gone to the homepage of Transavia.com
+	When I enter "Barcelona" as input in the arrival station input field
+	And select "Barcelona, Spain"
+	Then "Barcelona, Spain" is selected as arrival station
